@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Connection</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Add your custom CSS file -->
+
+</head>
+
+<body>
+  <div class="navbar-logo-left">
+   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="w-container">
+      <a href="#" class="w-nav-brand"><img src="images/logo.png" loading="lazy" width="322" sizes="(max-width: 479px) 96vw, 322px" alt="logo"> </a>
+     <nav role="navigation" class="w-nav-menu">
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="explore.html" class="nav-link">Explore</a>
+    <a href="collections.html" class="nav-link">Collections</a>
+  </div>
+  <div class="nav-icons">
+        <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+        <a href="user_profile.html">
+            <img src="images/user.png" loading="lazy" width="25" alt="" class="image-2">
+        </a>
+        <a href="cart.html" class="nav-icon" id="cart-trigger">
+            <img src="images/shoppingcart.png" loading="lazy" width="27" alt="" class="shoppingcart-image">
+        </a>
+        <a href="#" class="nav-icon" id="search-trigger">
+            <img src="images/search.png" loading="lazy" width="32" alt="" class="search-image">
+        </a>
+        <div class="search-container hidden">
+           <input type="text" id="search-input" placeholder="Search...">
+        </div>
+    </div>
+</nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <section>
+        <section class="container">
+            <div style="text-align: center">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img alt="mask fashion" src="./images/chickenburger.jpeg"
+                            style="width:100%; max-height: 500px">
+                        <div class="slide__text" id="text">
+                            TEXAS CHICKEN BURGER - @texaslover
+                            <br>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img alt="skincare products" src="./images/cheesepasta.jpeg"
+                            style="width:100%;max-height: 500px">
+                        <div class="slide__text" id="text">
+                            CHEESY PASTA - @foodieblogger
+                            <br>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img alt="girl working out" src="./images/cookies.jpeg" style="width:100%;">
+                        <div class="slide__text" id="text">
+                            SUGAR COOKIES - @crussyfood
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="recommendation-articles recommended-articles" id="text">
+    <div class="article__content container container--pall">
+        <div class="recommendation-articles__grid">
+            <a class="article__item" href="#">
+                <div class="article__image" style="background-image: url('/images/tomatopasta.jpg')">
+                </div>
+                <div class="article__text">
+                    <div class="article__title">
+                        50 summer pastas
+                    </div>
+                </div>
+            </a>
+            <a class="article__item" href="#">
+                <div class="article__image" style="background-image: url('/images/vegetables.jpeg')"></div>
+                <div class="article__text">
+                    <div class="article__title">
+                        Different ways to incorporate Vegetables!
+                    </div>
+                </div>
+            </a>
+            <a class="article__item" href="#">
+                <div class="article__image" style="background-image: url('/images/acai_bowls.jpeg')"></div>
+                <div class="article__text">
+                    <div class="article__title">
+                        20+ smoothie bowls for this summer
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <section class="popular-categories">
+            <div class="container container--pall">
+                <h2>Popular Categories</h2>
+                <div class="popular-categories__grid">
+                    <a class="popular-categories__item" href="#">
+                        <div class="popular-categories__image"
+                            style="background-image: url('/images/chickenburger.jpeg')">
+                        </div>
+                        <div class="popular-categories__text">
+                            <div class="popular-categories__title">
+                                BURGER
+                            </div>
+                        </div>
+                    </a>
+                    <a class="popular-categories__item" href="#">
+                        <div class="popular-categories__image"
+                            style="background-image: url('/images/salad.jpeg')">
+                        </div>
+                        <div class="popular-categories__text">
+                            <div class="popular-categories__title">
+                                SALAD
+                            </div>
+                        </div>
+                    </a>
+                    <a class="popular-categories__item" href="#">
+                        <div class="popular-categories__image"
+                            style="background-image: url('/images/halal.jpeg')">
+                        </div>
+                        <div class="popular-categories__text">
+                            <div class="popular-categories__title">
+                                HALAL
+                            </div>
+                        </div>
+                    </a>
+                    <a class="popular-categories__item" href="#">
+                        <div class="popular-categories__image"
+                            style="background-image: url('/images/vegan.jpeg')">
+                        </div>
+                        <div class="popular-categories__text">
+                            <div class="popular-categories__title">
+                                VEGAN
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="article__content container container--pall">
+                <h2>Recent Recipes</h2>
+                <div class="article__grid">
+                    <a class="article__item" href="#">
+                        <div class="article__image"
+                            style="background-image: url('/images/pancakes.jpeg')">
+                        </div>
+                        <div class="article__text">
+                            <div class="article__title">
+                                Fluffy Pancakes
+                            </div>
+                            <div class="article__description">
+                                ....
+                            </div>
+                        </div>
+                    </a>
+                    <a class="article__item" href="#">
+                        <div class="article__image"
+                            style="background-image: url('/images/thaistirfry.jpeg')">
+                        </div>
+                        <div class="article__text">
+                            <div class="article__title">
+                                Spicy Thai Basil Chicken Stir-Fry
+                            </div>
+                            <div class="article__description">
+                                ....
+                            </div>
+                        </div>
+                    </a>
+                    <a class="article__item" href="#">
+                        <div class="article__image"
+                            style="background-image: url('/images/mushroompasta.jpeg')">
+                        </div>
+                        <div class="article__text">
+                            <div class="article__title">
+                                Creamy Mushroom Risotto with Truffle Oil
+                            </div>
+                            <div class="article__description">
+                                ... …
+                            </div>
+                        </div>
+                    </a>
+                    <a class="article__item" href="#">
+                        <div class="article__image"
+                            style="background-image: url('/images/cheesypullapart.jpeg')">
+                        </div>
+                        <div class="article__text">
+                            <div class="article__title">
+                                Cheesy Pull apart
+                            </div>
+                            <div class="article__description">
+                                ... …
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <div class="footer">
+    <div class="columns"><img src="images/logo.png" loading="lazy" width="225" sizes="(max-width: 479px) 80vw, 225px" alt="" >
+      <div class="column">
+        <div class="logo-wrapper"></div>
+      </div>
+      <div class="small-columns">
+        <div class="column-2">
+          <div class="content">
+            <div class="text">Culinary Connection</div>
+            <div class="footer-links">
+              <div class="link">How it works</div>
+              <div class="link">About</div>
+              <div class="link">Legal</div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="content">
+            <div class="footer-links">
+                <br/>
+              <div class="link">Home</div>
+              <div class="link">Explore</div>
+              <div class="link">Collections</div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="content">
+        
+            <div class="footer-links">
+                  <br/>
+              <div class="link">Terms &amp; Conditions</div>
+              <div class="link">Privacy Policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="text-2">Copyright © 2023 Culinary Connection</div>
+    </div>
+  </div>
+    <script src="js/slide.js" type="text/javascript"></script>
+    <script src="js/buttons.js" type="text/javascript"></script>
+      
+</body>
+
+</html>
